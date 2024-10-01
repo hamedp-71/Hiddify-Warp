@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    overflow: auto;
+    color: #fff;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #1e1e2f 25%, #252535 25%, #252535 50%, #1e1e2f 50%, #1e1e2f 75%, #252535 75%, #252535);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    top: 5%; 
+}
+
+h1 {
+    font-size: 2.5em; 
+    margin-bottom: 10px;
+    color: goldenrod;
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 1em; 
+    color: gold;
+}
+
+.neon-button {
+    padding: 15px 30px;
+    font-size: 1.2em; 
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s ease;
+    margin: 0 5px; 
+}
+
+.neon-button.cyan-button::before {
+    background: linear-gradient(45deg, cyan, #00cfff); 
+}
+
+.neon-button.magenta-button::before {
+    background: linear-gradient(45deg, magenta, #ff00ff); 
+}
+
+.neon-button.orange-button::before {
+    background: linear-gradient(45deg, orange, #ff7b00); 
+}
+
+
+.neon-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: blur(15px); 
+    animation: glowing 20s linear infinite;
+}
+
+
+
+.neon-button:hover {
+    color: #ff0080; 
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+
+.select-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 16px; 
+}
+
+.select-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.ip-port-container {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.ip-port-item {
+    flex: 1; 
+    margin-right: 8px; 
+}
+
+.ip-port-item:last-child {
+    margin-right: 0; 
+}
+

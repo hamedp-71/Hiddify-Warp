@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> IPv6 </title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Material Design 3 CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto; 
+            margin: 0;
+            flex-direction: column; 
+        }
+        .background {
+            position: absolute; 
+            top: 0; 
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; 
+            background-color: #C3C3C3; 
+        }
+        .content {
+            z-index: 1; 
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            background-color: #C2C2C2;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 {
+            text-align: center;
+            color: #FF00B7;
+            font-size: 20px;
+        }
+        .input-field {
+            margin-bottom: 24px;
+        }
+        .input-field label {
+            color: #1000FF;
+            font-size: 14px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #A7A7A7;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            box-sizing: border-box;
+        }
+        .form-control:focus {
+            border-color: #3619D2;
+        }
+        .btn {
+            background-color: #1B5A99;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .btn:hover {
+            background-color: #4DA0FF;
+        }
+        .btn i {
+            margin-left: 8px;
+        }
+        .card-panel {
+            margin-top: 24px;
+            padding: 16px;
+            border-radius: 12px;
+            background-color: #C4A9FF;
+            display: none;
+        }
+        .card-panel h5 {
+            color: #A30D8E;
+            margin-bottom: 16px;
+        }
+        .qr-code-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 24px;
+            height: 200px;
+        }
+        .hidden {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <h1> IPv6 </h1>
+        <button class="neon-button orange-button" onclick="location.href='index.html'"> Main page</button>
+        <button class="neon-button cyan-button" onclick="location.href='page1.html'"> Go to IPv4 </button>
+    </div>
+
+    
+    <div class="container">
+        <h2>𓄂ʷᵃʳᵖᵢₚᵥ₆ 𓆃</h2>
+        <form id="warpinatorForm">
+            <div class="input-field">
+                <input id="username" type="text" name="Name Config" class="form-control">
+                <label for="username">Name Config </label>
+            </div>
+            <div class="input-field">
+                <input id="license" type="text" name="license" class="form-control">
+                <label for="license">License Warp Key </label>
+            </div>
+            <div class="input-field">
+              <div class="select-container">
+                <div class="select-item">
+                  <select id="type1" name="ifp" class="form-control">
+                    <option value="40-80" selected>40-80</option>
+                    <option value="10-20">10-20</option>
+                    <option value="20-30">20-30</option>
+                    <option value="30-40">30-30</option>
+                    <option value="40-50">40-50</option>
+                    <option value="50-60">50-60</option>
+                    <option value="60-70">60-70</option>
+                    <option value="70-80">70-80</option>
+                    <option value="80-90">80-90</option>
+                    <option value="90-100">90-100</option>
+                    <option value="20-40">20-40</option>
+                    <option value="30-60">30-60</option>
+                    <option value="40-80">40-80</option>
+                    <option value="50-100">50-100</option>
+                  </select>
+                  <label for="type1">ifp</label>
+                </div>
+                <div class="select-item">
+                  <select id="type2" name="ifps" class="form-control">
+                    <option value="50-100" selected>50-100</option>
+                    <option value="10-20">10-20</option>
+                    <option value="20-30">20-30</option>
+                    <option value="30-40">30-30</option>
+                    <option value="40-50">40-50</option>
+                    <option value="50-60">50-60</option>
+                    <option value="60-70">60-70</option>
+                    <option value="70-80">70-80</option>
+                    <option value="80-90">80-90</option>
+                    <option value="90-100">90-100</option>
+                    <option value="20-40">20-40</option>
+                    <option value="30-60">30-60</option>
+                    <option value="40-80">40-80</option>
+                    <option value="50-100">50-100</option>
+                  </select>
+                  <label for="type2">ifp size</label>
+                </div>
+              </div>
+            </div>
+            <div class="input-field">
+                <div class="select-container">
+                    <div class="select-item">
+                        <select id="type3" name="ifpd" class="form-control">
+                            <option value="2-4" selected>2-4</option>
+                            <option value="1-2">1-2</option>
+                            <option value="2-3">2-3</option>
+                            <option value="3-4">3-4</option>
+                            <option value="4-5">4-5</option>
+                            <option value="5-6">5-6</option>
+                            <option value="6-7">6-7</option>
+                            <option value="7-8">7-8</option>
+                            <option value="8-9">8-9</option>
+                            <option value="9-10">9-10</option>
+                            <option value="2-4">2-4</option>
+                            <option value="3-6">3-6</option>
+                            <option value="4-8">4-8</option>
+                            <option value="5-10">5-10</option>
+                        </select>
+                        <label for="type3">ifp delay</label>
+                    </div>
+                    <div class="select-item">
+                        <select id="type4" name="ifpm" class="form-control"
+                        >
+                    <option value="m4" selected>m4</option>
+                    <option value="m1">m1</option>
+                    <option value="m2">m2</option>
+                    <option value="m3">m3</option>
+                    <option value="m4">m4</option>
+                    <option value="m5">m5</option>
+                    <option value="m6">m6</option>
+                  </select>
+                  <label for="type4">ifp mode</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-field">
+                <input id="ip" type="text" name="ip" value="" class="form-control">
+                <label for="ip">IP Address (Optional)</label>
+                <input type="checkbox" id="autoFillCheckbox" onchange="toggleAutoFill()"> AUTO FILL!
+            </div>
+            <div class="input-field hidden" id="portField">
+                <input id="port" type="number" name="port" value="" class="form-control">
+                <label for="port">Port (Optional)</label>
+            </div>
+            <div class="center-align">
+                <button class="btn waves-effect waves-light" type="submit">Generate URL
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </form>
+        <div class="card-panel" id="result" style="display: none;">
+            <div class="qr-code-container" id="qrCodeContainer"></div>
+            <h5>Generated URL:</h5>
+            <div class="input-field">
+                <input id="generatedUrl" type="text" readonly class="form-control">
+                <label for="generatedUrl">URL</label>
+            </div>
+            <button class="btn waves-effect waves-light" onclick="copyToClipboard()">Copy URL
+                <i class="material-icons right">content_copy</i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Include qrcode.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('warpinatorForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                var username = document.getElementById('username').value || '𓄂ʷᵃʳᵖᵢₚᵥ₆ 𓆃';
+                var license = document.getElementById('license').value || '';
+                var type1 = document.getElementById('type1').value || '40-80';
+                var type2 = document.getElementById('type2').value || '40-10';
+                var type3 = document.getElementById('type3').value || '2-4';
+                var type4 = document.getElementById('type4').value || 'm4';
+
+                var ip = document.getElementById('ip').value || 'Click check box';
+                var auto = document.getElementById('autoFillCheckbox').checked ? 'false' : 'true';
+
+               
+                var licenseValue = license ? `warp://${license}@${ip}/?ifp=${type1}&ifps=${type2}&ifps=${type3}&ifpm=${type4}#${username}` : `warp://${ip}/?ifp=${type1}&ifps=${type2}&ifpd=${type3}&ifpm=${type4}#${username}`;
+                
+                var url = `${(licenseValue)}`;
+
+                document.getElementById('generatedUrl').value = url;
+                document.getElementById('result').style.display = 'block';
+
+                // Generate QR code
+                generateQRCode(url);
+            });
+        });
+
+        function copyToClipboard() {
+            var copyText = document.getElementById('generatedUrl');
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            document.execCommand('copy');
+            alert('URL copied to clipboard');
+        }
+
+        function fetchRandomIP() {
+            fetch('https://raw.githubusercontent.com/ircfspace/endpoint/refs/heads/main/ip.json')
+                .then(response => response.json())
+                .then(data => {
+                    var ipv6List = data.ipv6;
+                    var randomIndex = Math.floor(Math.random() * ipv6List.length);
+                    var randomIP = ipv6List[randomIndex];
+                    var [ip] = randomIP.split('[]:');
+
+                    document.getElementById('ip').value = ip;
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        }
+
+        function generateQRCode(data) {
+            var qrCodeContainer = document.getElementById('qrCodeContainer');
+            qrCodeContainer.innerHTML = ''; // Clear previous QR code if any
+
+            new QRCode(qrCodeContainer, {
+                text: data,
+                width: 200,
+                height: 200,
+                colorDark: "#000000",
+                colorLight: "#ffffff",
+                correctLevel: QRCode.CorrectLevel.L
+            });
+        }
+
+        function toggleAutoFill() {
+            var autoFillCheckbox = document.getElementById('autoFillCheckbox');
+            var ipField = document.getElementById('ip');
+            var portField = document.getElementById('port');
+
+            if (autoFillCheckbox.checked) {
+                ipField.disabled = true;
+                portField.disabled = true;
+                ipField.value = '';
+                portField.value = '';
+                fetchRandomIP();
+            } else {
+                ipField.disabled = false;
+                portField.disabled = false;
+            }
+        }
+    </script>
+</body>
+</html>
