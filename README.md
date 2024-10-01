@@ -1,2 +1,3 @@
-# warpinator
-just a frontend to build warp configs for various clients
+# warp Config hiddify
+
+https://darknessm427.github.io/Hiddify-warp/
