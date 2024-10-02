@@ -76,10 +76,6 @@ h2 {
     background: linear-gradient(45deg, orange, #ff7b00); 
 }
 
-.neon-button.orange-button::before {
-    background: linear-gradient(45deg, yellow, #FFFF00); 
-}
-
 .neon-button::before {
     content: '';
     position: absolute;
