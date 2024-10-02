@@ -1,5 +1,5 @@
 # warp Config hiddify
-# Telegram Channel : hamedvpns
+# Telegram Channel : t.me/hamedvpns
 
 https://hamedp-71.github.io/Hiddify-Warp/
 
